@@ -3,3 +3,112 @@
     object-fit: cover;
     background-position: center;
 }
+
+/* Existing styles remain unchanged */
+
+/* Chatbot button */
+.chatbot-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Chatbot modal */
+.chatbot-modal .ant-modal-content {
+    border-radius: 8px;
+}
+
+.chatbot-modal .ant-modal-header {
+    background-color: #1890ff;
+    color: white;
+    border-radius: 8px 8px 0 0;
+}
+
+.chatbot-modal .ant-modal-title {
+    color: white;
+}
+
+/* Chatbot container */
+.chatbot-container {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+/* Messages area */
+.chatbot-messages {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 16px;
+    padding: 8px;
+}
+
+/* Message styles */
+.chatbot-message {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.chatbot-message span {
+    padding: 8px 12px;
+    border-radius: 12px;
+    max-width: 70%;
+    word-wrap: break-word;
+}
+
+.user-message {
+    justify-content: flex-end;
+}
+
+.user-message span {
+    background-color: #1890ff;
+    color: white;
+}
+
+.bot-message span {
+    background-color: white;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+/* Input area */
+.chatbot-input {
+    display: flex;
+    gap: 8px;
+}
+
+.chatbot-input input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+}
+
+.chatbot-input input:focus {
+    border-color: #1890ff;
+}
+
+.chatbot-input button {
+    padding: 8px 16px;
+    background-color: #1890ff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.chatbot-input button:hover {
+    background-color: #40a9ff;
+}
+
+/* Share button */
+.recipeCard .ant-card-actions .ant-btn {
+    margin: 0 4px;
+}
